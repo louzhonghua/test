@@ -18,17 +18,16 @@
       <div class="cart" @click="addToCart">加入购物车</div>
       <div class="buy">购买</div>
     </div>
-    <sport-ball ref="ball" class="sport-ball"></sport-ball>
+
   </div>
 </template>
 
 <script>
-	import SportBall from 'components/content/sportBall/SportBall'
 
 	export default {
 		name: "DetailBottomBar",
     components: {
-			SportBall
+
     },
     methods: {
       addToCart(event) {
@@ -42,7 +41,7 @@
 <style scoped>
   .bottom-bar {
     height: 58px;
-    position: fixed;
+    position: relative;
     background-color: #fff;
     left: 0;
     right: 0;
