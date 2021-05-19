@@ -9,15 +9,18 @@ const Category = () => import('../views/category/Category')
 const Cart = () => import('../views/cart/Cart')
 const Profile = () => import('../views/profile/Profile')
 const Detail = () =>import('../views/detail/Detail')
-const Welcome =()=>import('views/welcome/Welcome')
+const Welcome =()=>import('../views/welcome/Welcome')
+const City = () =>import('@/views/welcome/City')
+const Test = () =>import('@/views/welcome/Test')
+const TreeView = () =>import('@/views/welcome/TreeView')
 const routes = [
   {
     path:'',
-    redirect:'/home'
+    redirect:'/welcome'
   },
   {
     path:'/home',
-    component:Welcome
+    component:Home
   },
   {
     path: '/category',
@@ -38,6 +41,18 @@ const routes = [
   {
     path: '/welcome',
     component:Welcome
+  },
+  {
+    path: '/city/:cityid',
+    component:City
+  },
+  {
+    path: '/test',
+    component: Test
+  },
+  {
+    path: '/treeview',
+    component:TreeView
   }
 ]
 

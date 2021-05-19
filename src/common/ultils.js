@@ -45,3 +45,21 @@ export function TimeFormat(date,format){
   });
   return format;
 }
+//存储localStorage
+export const setScore = (name,content)=>{
+  if (!name) return
+  if (typeof content !== 'string') {
+    content = JSON.stringify(content)
+  }
+  window.localStorage.setItem(name,content)
+}
+//获取localStorage
+export const getScore = name=>{
+  if (!name) return
+ return  window.localStorage.getItem(name)
+}
+//移除localStorage
+export const removeScore = name=>{
+  if (!name) return
+  window.localStorage.removeItem(name)
+}

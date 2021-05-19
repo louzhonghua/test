@@ -11,6 +11,7 @@
         <category-list :show-list="showGoods" ></category-list>
       </scroll>
     </div>
+    <main-tab-bar></main-tab-bar>
   </div>
 </template>
 
@@ -23,10 +24,12 @@ import TabControl from "@/views/home/childComponents/TabControl";
 import CategoryList from "@/components/content/categoryShow/CategoryList";
 
 import {getCategory,getSubCategory,getCategoryDetail} from "@/network/category";
+import MainTabBar from "@/components/content/mainTabbar/MainTabBar";
 
 export default {
     name: "Category",
     components:{
+      MainTabBar,
       Scroll,
       NavBar,
       TabMenu,

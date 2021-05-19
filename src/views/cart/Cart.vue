@@ -5,6 +5,7 @@
     </nav-bar>
     <cart-list/>
     <submit-bar class="submit-bar"/>
+    <main-tab-bar></main-tab-bar>
   </div>
 </template>
 
@@ -17,10 +18,12 @@ import CartList from "@/views/cart/childComps/CartList";
 import SubmitBar from "@/views/cart/childComps/SubmitBar";
 
 import {mapGetters} from 'vuex'
+import MainTabBar from "@/components/content/mainTabbar/MainTabBar";
 
   export default {
     name: "Cart",
     components:{
+      MainTabBar,
       CartList,
       NavBar,
       Scroll,

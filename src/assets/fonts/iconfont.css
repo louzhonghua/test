@@ -1,16 +1,20 @@
 @font-face {
   font-family: "iconfont"; /* Project id 2550930 */
-  src: url('//at.alicdn.com/t/font_2550930_rxy08nreml.woff2?t=1621137461908') format('woff2'),
-  url('//at.alicdn.com/t/font_2550930_rxy08nreml.woff?t=1621137461908') format('woff'),
-  url('//at.alicdn.com/t/font_2550930_rxy08nreml.ttf?t=1621137461908') format('truetype');
+  src: url('//at.alicdn.com/t/font_2550930_zq4s71e5lfh.woff2?t=1621219702055') format('woff2'),
+  url('//at.alicdn.com/t/font_2550930_zq4s71e5lfh.woff?t=1621219702055') format('woff'),
+  url('//at.alicdn.com/t/font_2550930_zq4s71e5lfh.ttf?t=1621219702055') format('truetype');
 }
 
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-zuojiantou:before {
+  content: "\e620";
 }
 
 .icon-youjiantou-copy:before {

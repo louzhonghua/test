@@ -15,6 +15,7 @@
       <home-show-list :show-list="showGoods"></home-show-list>
     </scroll>
     <back-top @click.native="backTop" v-show="backTopIsShow" ref="backtop"></back-top>
+    <main-tab-bar></main-tab-bar>
   </div>
 </template>
 
@@ -31,10 +32,12 @@
   import {homeRequset1,homeData} from "@/network/home";
   import {debounce} from "@/common/ultils";
   import {itemListenerMixin,backtopMixin} from '../../common/mixin'
+  import MainTabBar from "@/components/content/mainTabbar/MainTabBar";
 
   export default {
     name: "Home",
-    components: {HomeShowList, NavBar,HomeComponent,recommendComponent,FeatureHome,TabControl,
+    components: {
+      MainTabBar, HomeShowList, NavBar,HomeComponent,recommendComponent,FeatureHome,TabControl,
       Scroll,
       },
     data(){

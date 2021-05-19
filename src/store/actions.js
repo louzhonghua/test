@@ -10,6 +10,7 @@ export default {
       let oldProduct =context.state.cartList.find(item=>
         {return item.iid === payload.iid}
       )
+      console.log(oldProduct)
       if (oldProduct) {
         // oldProduct.count += 1;
         resolve('购物车已存在的商品数量加1')
